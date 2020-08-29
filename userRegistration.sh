@@ -101,3 +101,15 @@ then
 else
 	echo "Password is invalid";
 fi
+
+#UC9 Email samples
+
+read -p "Enter email: " email
+pattern="^[a-zA-Z]+[a-zA-Z0-9\#\.\!\$\_]*\@[a-z]*\.(co|in|com)$"
+
+if [[ "$email" =~ $pattern ]]
+then
+	echo "Email address is valid";
+else
+	echo "Email address is invalid";
+fi
